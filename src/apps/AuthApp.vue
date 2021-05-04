@@ -27,8 +27,6 @@ export default {
       initialPath: window.location.pathname,
       onNavigate: function ({ pathname: nextPathname }) {
         const { pathname: currentPathName } = $location;
-        console.log(nextPathname);
-        console.log(currentPathName);
 
         if (currentPathName !== nextPathname) {
           $router.push(nextPathname);
